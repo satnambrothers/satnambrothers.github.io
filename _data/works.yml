@@ -1,0 +1,11 @@
+- title: Sample Work 1
+  image: /assets/img/work1.jpg
+  desc: some desc of work 1
+
+- title: Sample Work 2
+  image: /assets/img/work2.jpg
+  desc: some desc of work 2
+
+- title: Sample Work 3
+  image: /assets/img/work3.jpg
+  desc: some desc of work 3

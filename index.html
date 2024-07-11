@@ -24,16 +24,15 @@ layout: default
   {% include sidebar.html %}
 </div>
 <!-- /.row -->
-
 <div class="row">
+{% for work in site.data.works %}
   <div class="col-md-4 mb-5">
     <div class="card border-0 shadow h-100">
-      <img class="card-img-top" src="http://placeholder.pics/svg/400x300/3cb371-3cb371/3cb371-3cb371" alt="" />
+      <img class="card-img-top" src="{{ work.image }}" alt="" />
       <div class="card-body">
-        <h4 class="card-title">Card title</h4>
+        <h4 class="card-title">{{ work.title | xml_escape }}</h4>
         <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-          esse necessitatibus neque sequi doloribus.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio quos eos cumque, soluta officia molestias amet quidem esse provident, earum nobis placeat fugit, ipsa repellat libero possimus beatae accusamus dignissimos.
         </p>
       </div>
       <div class="card-footer">
@@ -41,35 +40,8 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="col-md-4 mb-5">
-    <div class="card border-0 shadow h-100">
-      <img class="card-img-top" src="http://placeholder.pics/svg/400x300/3cb371-3cb371/3cb371-3cb371" alt="" />
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-          esse necessitatibus neque sequi doloribus totam ut praesentium aut.
-        </p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="btn btn-primary">Find Out More!</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4 mb-5">
-    <div class="card border-0 shadow h-100">
-      <img class="card-img-top" src="http://placeholder.pics/svg/400x300/3cb371-3cb371/3cb371-3cb371" alt="" />
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-          esse necessitatibus neque.
-        </p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="btn btn-primary">Find Out More!</a>
-      </div>
-    </div>
-  </div>
+  {% endfor %}
 </div>
 <!-- /.row -->
+
+{% include map.html %}
