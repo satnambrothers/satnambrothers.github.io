@@ -1,5 +1,43 @@
 <!-- Header -->
-<header class="bg-primary py-5 mb-5">
+<style>
+  .home-banner {
+    background: linear-gradient(-45deg, #ee7752, #746619, #4b26a0, #a1f3e0);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .home-banner>div {
+    background: #0000004f;
+    background: rgba(255, 255, 255, 0.2);
+    /* White background with transparency */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Border with transparency */
+    color: #fff;
+    /* Text color */
+  }
+</style>
+<header class="bg-primary py-5 mb-5 home-banner">
   <div class="container h-100">
     <div class="row h-100 align-items-center">
       <div class="col-lg-12">
