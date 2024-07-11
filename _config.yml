@@ -1,0 +1,17 @@
+title: Satnam Brothers
+description: Satnam Brothers Bus Body Builders, leaders in Bhopal, MP, excel in crafting top-quality bus bodies with unmatched expertise.
+
+# disabled because we are using a custom domain
+#baseurl: /business-frontpage 
+
+color-scheme: "#009688" # the scheme can be any HEX code like "#00aa55"
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+include:
+  - _pages
+
+exclude:
+  - .sass-cache
